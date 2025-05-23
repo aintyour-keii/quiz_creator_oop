@@ -1,3 +1,6 @@
+import os
+import random
+
 class QuizTaker:
     def __init__(self):
         pass
