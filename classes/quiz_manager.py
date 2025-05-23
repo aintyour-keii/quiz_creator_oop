@@ -7,7 +7,7 @@ class QuizManager:
         self.quizzes_folder = "quizzes"
         os.makedirs(self.quizzes_folder, exist_ok=True)
         self.creator = QuizCreator(self.quizzes_folder)
-        self.taker = QuizTaker()
+        self.taker = QuizTaker(self.quizzes_folder, self)
 
     def main_menu(self):
         print("\nQuiz Program")
