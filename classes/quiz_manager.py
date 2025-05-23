@@ -6,6 +6,8 @@ class QuizManager:
     def __init__(self):
         self.quizzes_folder = "quizzes"
         os.makedirs(self.quizzes_folder, exist_ok=True)
+        self.creator = QuizCreator(self.quizzes_folder)
+        self.taker = QuizTaker()
 
     def main_menu(self):
         print("\nQuiz Program")
