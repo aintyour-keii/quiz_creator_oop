@@ -8,4 +8,21 @@ class QuizManager:
         os.makedirs(self.quizzes_folder, exist_ok=True)
 
     def main_menu(self):
-        pass
+        print("\nQuiz Program")
+        print("1. Create a Quiz")
+        print("2. Take Quiz")
+        print("3. Exit")
+
+        user_input = input("Enter an option: ").strip()
+        if user_input == "1":
+            # call a method in quiz creator class
+            pass
+        elif user_input == "2":
+            # call a method in quiz taker class
+            pass
+        elif user_input == "3":
+            # quit program
+            pass
+        else:
+            # invalid input, call main menu function
+            pass
