@@ -18,13 +18,15 @@ class QuizManager:
         user_input = input("Enter an option: ").strip()
         if user_input == "1":
             # call a method in quiz creator class
-            pass
+            self.creator.create_quiz()
         elif user_input == "2":
             # call a method in quiz taker class
-            pass
+            self.taker.take_quiz()
         elif user_input == "3":
             # quit program
-            pass
+            print("Thank you for using the Quiz Program. Goodbye!")
+            quit()
         else:
             # invalid input, call main menu function
-            pass
+            print("Invalid input. Please choose 1 or 2 or 3.")
+            self.main_menu()
