@@ -2,8 +2,9 @@ import os
 import random
 
 class QuizTaker:
-    def __init__(self):
-        pass
+    def __init__(self, folder, manager):
+        self.quizzes_folder = folder
+        self.manager = manager
 
     def take_quiz(self):
         pass
