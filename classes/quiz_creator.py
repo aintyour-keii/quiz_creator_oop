@@ -1,3 +1,6 @@
+import os
+import random
+
 class QuizCreator:
     def __init__(self, folder):
         pass
